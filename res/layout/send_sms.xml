@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3B5998"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:padding="10px"
+        android:text="Send Secure SMS"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="monospace" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/select_contact_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0"
+                android:text="Select Contact"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Step 1:"
+                android:textColor="#3b5998"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="#3b5998" />
+
+            <TextView
+                android:id="@+id/select_contact_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="0"
+                android:text="Contact: Not Selected"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#dd0000"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/request_public_key_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Request Receiver&apos;s Signature" />
+
+            <TextView
+                android:id="@+id/request_public_key_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="0"
+                android:text="Receiver&apos;s Signature: Not Requested"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#dd0000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Step 2:"
+                android:textColor="#3b5998"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="#3b5998" />
+
+            <Button
+                android:id="@+id/read_public_key_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Read Receiver&apos;s Signature" />
+
+            <TextView
+                android:id="@+id/read_public_key_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="0"
+                android:text="Public Key: Not Read"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#dd0000" />
+
+            <TextView
+                android:id="@+id/read_modulus_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="0"
+                android:text="Modulus: Not Read"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#dd0000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Step 3:"
+                android:textColor="#3b5998"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="#3b5998" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:layout_weight="0"
+                android:text="Enter the Message"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/original_message"
+                android:layout_width="fill_parent"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/encrypt_message_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0"
+                android:text="Encrypt Message" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Step 4:"
+                android:textColor="#3b5998"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="#3b5998" />
+
+            <Button
+                android:id="@+id/clear_message_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0"
+                android:text="Clear Encrypted Message"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/encrypt_message_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_weight="0"
+                android:text="Message: Not Encrypted"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#dd0000"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/send_message_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0"
+                android:text="Send Message" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

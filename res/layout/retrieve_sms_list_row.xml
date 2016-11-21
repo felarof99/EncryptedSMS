@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5px"
+    android:paddingBottom="5px"
+    >
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+        <TextView 
+		    android:id="@+id/retrieve_sms_list_row_date"
+		    android:text="Time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textColor="#990000"
+		    android:textSize="12sp"
+		    android:gravity="center_horizontal"
+		/>
+    </TableRow>    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+		<TextView 
+		    android:id="@+id/retrieve_sms_list_row_title"
+		    android:text="Sender's No."
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textColor="#3b5998"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:gravity="left"
+		    android:ellipsize="end"
+		    />
+		<TextView
+		    android:visibility="gone" 
+		    android:id="@+id/retrieve_sms_list_row_category"
+		    android:text="No Payment Type"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textColor="#3b5998"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:gravity="center_horizontal"
+		    />
+		<TextView 
+		    android:visibility="gone"
+		    android:id="@+id/retrieve_sms_list_row_future"
+		    android:text="Unknown"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textColor="#990000"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:gravity="right"
+		    />
+	</TableRow>
+	<TableRow 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    >
+	   	<TextView 
+	   	    android:id="@+id/retrieve_sms_list_row_descrip"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:text="No Description"
+	   	    android:textColor="#505050"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:ellipsize="end"
+	   	    />
+	</TableRow>
+</TableLayout>
+</LinearLayout>

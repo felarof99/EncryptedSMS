@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+		<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Select the Message"
+		android:textSize="20dp"
+		android:typeface="monospace"
+		android:background="#3B5998"
+		android:textColor="#ffffff"
+		android:gravity="center_horizontal"
+		android:textStyle="bold"
+		android:padding="10px"
+		/>
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#c7c7c7"
+		    >
+
+			    <LinearLayout
+			        android:orientation="horizontal" 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:padding="5px"
+			        >
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Showing:"
+				            android:textAppearance="?android:attr/textAppearanceSmall"
+				            android:textColor="#3b5998"
+				            android:textStyle="bold"
+				            android:typeface="monospace" 
+				            android:paddingRight="5px"
+				            />		
+					   	<TextView
+					   	    android:id="@+id/retrieve_sms_list_header"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Not Set"
+							android:textColor="#990000"
+							android:textAppearance="?android:attr/textAppearanceSmall" 
+							android:typeface="monospace"
+							android:layout_marginRight="5px"
+						/>	
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Messages"
+				            android:textAppearance="?android:attr/textAppearanceSmall"
+				            android:textColor="#3b5998"
+				            android:textStyle="bold"
+				            android:typeface="monospace" 
+				            android:paddingRight="5px"
+				            />	
+			    </LinearLayout>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    >
+
+			<ListView
+			    android:id="@+id/retrieve_sms_list"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="#ffffff"
+			    android:cacheColorHint="#ffffff"
+			    android:divider="#c7c7c7"
+			    android:dividerHeight="1px" >
+
+			</ListView>
+	</LinearLayout>
+
+</LinearLayout>
